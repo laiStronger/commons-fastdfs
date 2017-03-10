@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.youanmi.scrm</groupId>
+	<artifactId>commons-fastdfs</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>commons-fastdfs</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- maven上传下载 -->
+	<!--<distributionManagement> <repository> <id>o2o_releases</id> <name>dev</name> 
+		<url>http://dev.nexus.youanmi.com/content/repositories/releases/</url> </repository> 
+		<snapshotRepository> <id>o2o_snapshots</id> <name>Nexus Snapshot Repository</name> 
+		<url>http://dev.nexus.youanmi.com/content/repositories/snapshots/</url> </snapshotRepository> 
+		</distributionManagement> <repositories> <repository> <id>o2o_repository</id> 
+		<name>Team Repository</name> <url>http://dev.nexus.youanmi.com/content/groups/public/</url> 
+		</repository> </repositories> -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version>1.8</java-version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<!-- log start -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.csource.fastdfs</groupId>
+			<artifactId>fastdfs-client</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.youanmi.scrm</groupId>
+			<artifactId>commons-util</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<distributionManagement>
+		<repository>
+			<id>o2o_releases</id>
+			<name>dev</name>
+			<url>http://dev.nexus.youanmi.com/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>o2o_snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://dev.nexus.youanmi.com/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
